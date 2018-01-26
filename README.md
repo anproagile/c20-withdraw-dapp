@@ -1,15 +1,8 @@
-# Crypto20 Withdraw Dapp
+crypto20-withdraw
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Start the project and recieve live updates during development.
-
-### `npm run build`
-
-Create a production build of the Dapp in the `buildFrontend` folder.
-
-You will need to have truffle installed and run `truffle compile` to generate the smart contract ABI and interaction methods.
+NOTE: there is a version issue with the 'halogen/PulseLoader' package. Must add:
+```
+var PropTypes = require('prop-types')
+var createReactClass = require('create-react-class')
+```
+and replace `React.PropTypes` with `PropTypes` and `React. createClass` with `createReactClass` in the file `node_modules/halogen/PulseLoader.js`.
